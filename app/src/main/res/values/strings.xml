@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Manga</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dang_ky"><u>Đăng Ký</u> </string>
+    <string name="sua"> <u>Sửa</u></string>
+    <string name="Mota_test"> -Từ thời xưa luôn có những truyền thuyết về loài quỷ ăn thịt người rình mò trong
+        các khu rừng khi màn đêm buông xuống. Chính điều này khiến người dân không ai dám vào rừng vào ban đêm.
+        Tuy nhiên, Tanjiro, một cậu trai làm nghề bán củi than sống cùng gia đình trên núi lại không tin vào điều này,
+        cậu quá bận rộn làm nuôi các anh em của mình. Nhưng rồi Tanjiro đã sớm phải tin vào những câu chuyện hảo
+        huyền đó khi hiện thực cay nghiệt đến với cậu...</string>
+</resources>

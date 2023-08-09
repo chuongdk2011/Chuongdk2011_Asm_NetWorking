@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/background1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đổi Mật Khẩu"
+        android:textSize="35dp"
+        android:textColor="#FFA1A1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_mkcu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:hint="Mật khẩu cũ"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:startIconDrawable="@drawable/icon_changepass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="#FFA1A1"
+        android:textColorHint="#FFA1A1"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_mkcu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_matkhaumoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="Mật khẩu mới"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_tilusername"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/icon_changepass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="#FFA1A1"
+        android:textColorHint="#FFA1A1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_matkhaumoi"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_nlmatkhaumoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="Nhập mật khẩu mới"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_tilusername"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/icon_changepass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="#FFA1A1"
+        android:textColorHint="#FFA1A1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_nlmatkhaumoi"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_doimk"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Đổi Mật Khẩu"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:backgroundTint="#FD9898"/>
+
+
+</LinearLayout>

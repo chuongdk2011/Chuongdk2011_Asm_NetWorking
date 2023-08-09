@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/backgroundlogin">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:textSize="35dp"
+        android:textColor="#FFA1A1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_tilusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:hint="Username"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:startIconDrawable="@drawable/icon_profile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="#FFA1A1"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_tilpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="Mật Khẩu"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_tilusername"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/icon_changepass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="#FFA1A1"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_matkhau"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/cbo_saveLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Lưu Mật Khẩu"
+        android:textColor="#FD9898"
+        android:textSize="20dp"
+        android:buttonTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_dangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Đăng Nhập"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:backgroundTint="#FD9898"/>
+
+    <LinearLayout
+        android:id="@+id/layout_SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_quenmatkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Chưa có tài Khoản?"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_chuadangky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FD9898"
+            android:text="@string/dang_ky"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

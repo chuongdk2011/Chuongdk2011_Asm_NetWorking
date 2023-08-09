@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CTTruyenActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/img_anhCT"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/img_anhCT2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          />
+
+        <ImageView
+            android:id="@+id/img_anhbia"
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#55000000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="DEMON SLAYER"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/img_anhbia"
+            app:layout_constraintTop_toTopOf="@id/img_anhbia" />
+        <ImageView
+            android:id="@+id/img_backCTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back2"
+            android:layout_margin="7dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_tg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#55000000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="Gotouge Koyoharu"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/img_anhbia"
+            app:layout_constraintTop_toBottomOf="@id/tv_ten" />
+
+        <TextView
+            android:id="@+id/tv_nxb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#55000000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="2016"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/img_anhbia"
+            app:layout_constraintTop_toBottomOf="@id/tv_tg" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FD8864"
+            android:text="Đọc Truyện"
+            app:layout_constraintLeft_toLeftOf="@id/tv_nxb"
+            app:layout_constraintTop_toBottomOf="@id/tv_nxb"
+            android:id="@+id/btn_doctruyen"/>
+
+
+        <ImageView
+            android:id="@+id/img_favorite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/baseline_add_task_241"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_tilteCT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="Chi Tiết"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_anhCT" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_tilteCT"
+        app:layout_constraintLeft_toRightOf="@id/tv_tilteCT"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_tilteCT" />
+
+    <TextView
+        android:id="@+id/tv_motaCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="36dp"
+        android:background="#FBF1F1"
+        android:padding="8dp"
+        android:text="@string/Mota_test"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tilteCT" />
+
+    <TextView
+        android:id="@+id/tv_BinhLuanCT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="Bình Luận"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_motaCT" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_BinhLuanCT"
+        app:layout_constraintLeft_toRightOf="@id/tv_BinhLuanCT"
+        app:layout_constraintRight_toLeftOf="@id/btn_addBl"
+        app:layout_constraintTop_toTopOf="@id/tv_BinhLuanCT" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm Bình Luận"
+        android:id="@+id/btn_addBl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_BinhLuanCT"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_bl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_BinhLuanCT"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
